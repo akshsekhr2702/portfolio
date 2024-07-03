@@ -6,7 +6,7 @@ const About = () => {
     <div className='flex justify-between text-center items-center gap-20 mt-20 bg-[#0D1321]  text-white px-20 py-40'>
 
         <div className='max-w-[50%] text-start leading-relaxed'>
-       <h1 className='text-6xl oswald font-bold'> HI! I'M <span className='text-orange-600'>AKSHYANSHU</span>,<br />
+       <h1 className='text-6xl oswald font-bold'> HI! I&lsquo;M <span className='text-orange-600'>AKSHYANSHU</span>,<br />
         I LOVE MAKING THINGS <br />THAT HELP PEOPLE DO <br />THEIR THING.</h1>
         </div>
         <div className=' w-[400px] outfit'>
