@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${oswald.variable} ${outfit.variable} bg-[#0D1321] flex flex-col justify-center items-center p-10 `}>
+      <body className={`${oswald.variable} ${outfit.variable} bg-[#0D1321] flex flex-col justify-center items-center  `}>
         <Navbar />
         {children}
         </body>
