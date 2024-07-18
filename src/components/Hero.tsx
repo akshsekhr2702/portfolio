@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import AnimatedSquare from './AnimatedSquare'
-import { TiltCard } from '@/app/about/page'
+
 import Image from 'next/image'
 
 const Hero = () => {
