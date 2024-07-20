@@ -4,6 +4,8 @@ import About from './About'
 import Experience from './Experience'
 import GBackground from './GBackground'
 import AnimatedSquare from './AnimatedSquare'
+import Footer from './Footer'
+import { DivOrigami } from './DivOrigami'
 
 const Body = () => {
   return (
@@ -12,7 +14,8 @@ const Body = () => {
           <Hero />
           <About />
           <Experience />
-         
+          <Footer/>
+          <DivOrigami />
           </div>
     </GBackground>
   )

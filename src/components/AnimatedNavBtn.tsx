@@ -3,15 +3,15 @@ import { DragCloseDrawerExample } from '@/components/DragCloseDrawer';
 import React, { useState } from 'react';
 import {motion, MotionConfig} from 'framer-motion'
 
-const Contact = () => {
+const AnimatedNavBtn = () => {
   return (
-    <div className='grid h-screen w-full place-content-center bg-gradient-to-br from-transparent to-purple-800'>
+    <div className=''>
       <AnimatedButton />
     </div>
   );
 }
 
-export default Contact;
+export default AnimatedNavBtn ;
 
 
 const AnimatedButton = () =>{
@@ -30,17 +30,17 @@ const AnimatedButton = () =>{
     <motion.button 
     onClick={()=>setActive((pv)=>!pv)}
     animate={active ? "open":"closed"}
-    className='relative h-20 w-20 rounded-full bg-white/0 transition-colors  hover:bg-white/20'>
+    className='relative h-10 w-10 rounded-xl bg-white/0 transition-colors  hover:bg-white/20 p-2'>
         <motion.span style={{
             left:'50%',
-            top:'35%',
+            top:'25%',
             x:"-50%",
             y:'-50%',
 
         }}
         variants={{
           open:{
-            y:'',
+            y:'0.5rem',
             rotate:'45deg'
           },
           closed:{
@@ -49,7 +49,7 @@ const AnimatedButton = () =>{
         }}
        
 
-         className='absolute h-1 w-10 bg-white' />
+         className='absolute h-1 w-7 bg-white' />
         <motion.span style={{
             top:'50%',
             left:'50%',
@@ -67,14 +67,28 @@ const AnimatedButton = () =>{
             rotate:'0deg'
           }
         }}
-        className='absolute h-1 w-10 bg-white' />
+        className='absolute h-1 w-7 bg-white' />
         <motion.span style={{
             left:'calc(50% + 10px)',
-            bottom:'35%',
+            bottom:'25%',
             x:"-50%",
             y:'50%'
             
-        }} className='absolute h-1 w-5 bg-white' />
+        }} className='absolute h-1 w-2 bg-white'
+        variants={{
+          open:{
+            y:'-10px',
+           visibility:'hidden'
+          },
+          closed:{
+            visibility:'visible'
+          }
+        }}
+        transition={{
+          duration:0.1
+        }}
+
+         />
 
     </motion.button>
     </MotionConfig>
